@@ -3,7 +3,7 @@ var data = {
 title: [
     "Back-in-black",
     "Stand-up"
-    ""
+    
 ],
 
 
@@ -132,3 +132,11 @@ song.addEventListener("timeupdate", function () {
                 mute.src = "nkar/volume-mute.png"
             }
         }
+
+        function increase() {
+            song.volume += 0.2;
+            }
+            
+            function decrease() {
+            song.volume -= 0.2;
+            }
